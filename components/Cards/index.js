@@ -56,23 +56,25 @@ function cardCreator(object) {
     headlineDiv.classList.add("healine");
     headlineDiv.textContent = `${object.headline}`;
     cardDiv.appendChild(headlineDiv);
-
+    //author
     let authorDiv = document.createElement("div");
     authorDiv.classList.add('author');
-    authorDiv.textContent= `${object.authorName}`
-    cardDiv.appendChild(authorDiv);
+    
 
     let imgcDiv = document.createElement("div"); 
     imgcDiv.classList.add("img-container");
-    cardDiv.appendChild(imgcDiv);
+
 
     let imgEl = document.createElement("img");
     imgEl.src = `${object.authorPhoto}`;
-    cardDiv.appendChild(imgEl);
+    imgcDiv.appendChild(imgEl);
+    authorDiv.appendChild(imgcDiv);
+    cardDiv.appendChild(authorDiv);
 
 
     let authorSpan = document.createElement("span");
     authorSpan.textContent = `By: ${object.authorName}`;
+    cardDiv.appendChild(authorSpan);
 
     return cardDiv;
 
