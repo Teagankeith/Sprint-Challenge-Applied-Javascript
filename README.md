@@ -29,14 +29,19 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your team lead.
 
 1. What is the DOM?
+- The DOM is the Document Object Model. Whenever a page is loaded into the browser, an interpreter take the HTML and CSS and adds it into the DOM. From that point on, the HTML and CSS is no longer used. The only way to edit/add things or add styling is do to it through the DOM with JS.
 
 2. What is an event?
+- Events are fired constantly while a user is on the page. It can be anything from a user mouseing over an element, clicking on something, or reloading the page. These events are store inside the DOM and we can use them for certain styling.
 
 3. What is an event listener?
+- An event listner is something that developers use whenever they want to listen for a certain event to happen, i.e a user clicks on an image or he focuses on a text box. A developer can use these event listeners to make the page more responsive to user input and add styling effects even after the finalization of the HTML/CSS files.
 
 4. Why would we convert a NodeList into an Array?
+- Because, once you convert a NodeList into an Array, you can use certain methods that are exclusing to Arrays such as, filter/every/forEach. This opens up a wide possiblity to use looping methods to iterate over Arrays when previously it was not possible.
 
 5. What is a component?
+- A component is a group of elements, such as on this project, the cards are considered compnents.
 
 ### Git Set up
 
