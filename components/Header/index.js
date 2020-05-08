@@ -14,28 +14,31 @@
 let headContainer = document.querySelector(".header-container");
 
 function Header(date, temp, h1) {
+    
+    // Creating components
     let divHeader = document.createElement("div");
-    divHeader.classList.add("header");
-
     let spanDate = document.createElement("span");
-    spanDate.classList.add("date");
-    spanDate.textContent = date;
-
     let ltH1 = document.createElement("h1");
-    ltH1.textContent= h1;
-
-
     let tempSpan = document.createElement("span");
+    
+    // Adding Classes
+    divHeader.classList.add("header");
+    spanDate.classList.add("date");
     tempSpan.classList.add("temp");
+
+    // Assigning text context based off arguments
     tempSpan.textContent = temp;
+    spanDate.textContent = date;
+    ltH1.textContent= h1;
+    
+    
 
-
+    // Appending the children
     divHeader.appendChild(spanDate);
     divHeader.appendChild(ltH1);
     divHeader.appendChild(tempSpan);
-
     headContainer.appendChild(divHeader);
-    return headContainer;
+
 }
 
 Header("SMARCH 28, 2019", "98°", "Lambda Times");
